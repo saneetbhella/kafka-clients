@@ -22,12 +22,14 @@ subprojects {
         // Config
         implementation("com.typesafe:config:1.4.2")
 
-        // Kafka Client
-        implementation("org.apache.kafka:kafka-clients:3.4.0")
+        // Kafka
+        implementation("org.apache.kafka:kafka-clients:3.5.1")
+        implementation("org.apache.kafka:kafka-streams:3.5.1")
 
         // Kafka Avro
         implementation("org.apache.avro:avro:1.11.1")
         implementation("io.confluent:kafka-avro-serializer:5.3.0")
+        implementation("io.confluent:kafka-streams-avro-serde:7.4.0")
 
         // Logging
         implementation("ch.qos.logback:logback-classic:1.4.6")

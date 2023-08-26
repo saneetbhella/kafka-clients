@@ -9,8 +9,9 @@ fun main() {
     val kafkaProducer = KafkaProducer<String, Payment>(AppConfig.kafkaProperties)
 
     for (i in 1..1000) {
-        val payment = Payment(UUID.randomUUID().toString(), "A payment")
-        kafkaProducer.send(ProducerRecord("payments", payment))
+        val uuid = UUID.randomUUID().toString()
+        val payment = Payment(uuid, "A payment")
+        kafkaProducer.send(ProducerRecord("payments", uuid, payment))
         kafkaProducer.flush()
     }
 }
