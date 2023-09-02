@@ -17,4 +17,6 @@ object AppConfig {
         }
         return props
     }
+
+    fun Properties.getConfig(value: String): String = this[value].toString()
 }
