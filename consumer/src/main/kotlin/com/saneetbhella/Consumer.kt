@@ -7,7 +7,7 @@ import java.util.Collections
 
 fun main() {
     val kafkaConsumer = KafkaConsumer<String, Payment>(AppConfig.kafkaProperties)
-    kafkaConsumer.subscribe(Collections.singletonList("payments"))
+    kafkaConsumer.subscribe(Collections.singletonList(AppConfig.kafkaProperties.getProperty("topic.name")))
 
     while (true) {
         val records = kafkaConsumer.poll(Duration.ofMillis(100))

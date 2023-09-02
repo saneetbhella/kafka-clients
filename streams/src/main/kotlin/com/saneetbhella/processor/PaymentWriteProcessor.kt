@@ -1,5 +1,6 @@
-package com.saneetbhella
+package com.saneetbhella.processor
 
+import com.saneetbhella.AppConfig
 import com.saneetbhella.AppConfig.getConfig
 import com.saneetbhella.schemas.Payment
 import org.apache.kafka.streams.processor.api.Processor

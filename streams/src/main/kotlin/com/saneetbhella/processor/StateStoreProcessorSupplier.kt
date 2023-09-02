@@ -1,4 +1,4 @@
-package com.saneetbhella
+package com.saneetbhella.processor
 
 import com.saneetbhella.schemas.Payment
 import org.apache.kafka.streams.processor.api.Processor
