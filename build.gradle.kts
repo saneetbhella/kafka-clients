@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.8.20"
+    kotlin("jvm") version "1.9.20"
     id("com.github.davidmc24.gradle.plugin.avro") version "1.7.0"
 }
 
